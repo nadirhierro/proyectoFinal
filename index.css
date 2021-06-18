@@ -1,0 +1,281 @@
+/* Reset css */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Fuente roboto */
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+/* Color beige */
+.colorA {
+  color: rgb(150, 132, 106) !important;
+  font-weight: bold;
+}
+.negro {
+  color: black !important;
+}
+/* fondo azul con foto fija */
+.fondoAzul {
+  background-image: url(images/fondo.jpeg);
+  background-color: #122335 !important;
+  background-blend-mode: darken;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+/* fondo azul sin foto */
+.fondoAzulNoFoto {
+  background-color: #122335 !important;
+}
+/* fondo beige radial */
+.fondoBeigeRadial {
+  background: radial-gradient(
+    circle,
+    rgba(150, 132, 106, 0.8323704481792717) 46%,
+    rgba(111, 96, 96, 0.8379726890756303) 100%
+  ) !important;
+}
+/* fondo beige */
+.fondoBeige {
+  background-color: rgb(150, 132, 106) !important;
+}
+/* header presentación */
+.header {
+  height: 100vh;
+}
+/* cambio del png de hamburguesa */
+.navbar-toggler-icon {
+  background-image: url(images/hamburguer.png) !important;
+}
+/* tamaño logo en header */
+.header__nav__logo {
+  height: 40px;
+  width: auto;
+}
+/* transition para los li del nav */
+.header__nav li {
+  transition: 0.5s !important;
+}
+/* escalado al hacer hover */
+.header__nav li:hover {
+  transform: scale(0.9, 0.9) !important;
+}
+.header__nav li a {
+  font-size: 20px;
+}
+/* gap en caja flex de header */
+.header__flex {
+  gap: 10px;
+}
+/* tamaño de logo */
+.header__logo {
+  margin-top: 90px;
+  width: 200px;
+}
+@media (min-width: 768px) {
+  .header__logo {
+    width: auto;
+  }
+}
+/* Tamaño de los íconos de redes sociales transition y sus media queries */
+.header__redesSociales img {
+  width: 30px;
+  height: 30px;
+  transition: 0.5s;
+}
+/* escalado al hacer hover */
+.header__redesSociales img:hover {
+  transform: translate(0px, -5px);
+}
+@media (min-width: 768px) {
+  .header__redesSociales img {
+    width: 35px;
+    height: 35px;
+  }
+}
+@media (min-width: 992px) {
+  .header__redesSociales img {
+    width: 40px;
+    height: 40px;
+  }
+}
+/* botón Ingresar sin decoration */
+.header__boton a {
+  text-decoration: none;
+}
+/* Padding para próximas fechas */
+.proximasFechas {
+  padding-top: 45px;
+  padding-bottom: 20px;
+}
+/* Formato para subtítulos negros y beige, y sus media queries */
+.subtitulo--negro {
+  font-size: 2.5rem;
+  color: black;
+  text-align: center;
+  padding: 20px;
+}
+.subtitulo--beige {
+  font-size: 2.5rem;
+  color: rgb(150, 132, 106);
+  text-align: center;
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .subtitulo--negro {
+    font-size: 3rem;
+  }
+  .subtitulo--beige {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 992px) {
+  .subtitulo--negro {
+    font-size: 3.5rem;
+  }
+  .subtitulo--beige {
+    font-size: 3.5rem;
+  }
+}
+/* Ajuste flex de las tarjetas con sus media queries */
+.tarjetas {
+  justify-content: space-between;
+  gap: 10px;
+}
+@media (min-width: 576px) {
+  .tarjetas {
+    gap: 10px;
+  }
+  .tarjeta {
+    flex-basis: 49%;
+  }
+}
+@media (min-width: 992px) {
+  .tarjetas {
+    gap: 5px;
+  }
+  .tarjeta {
+    flex-basis: 24%;
+  }
+}
+/* Filtro para img de las tarjetas y transition */
+.card img {
+  filter: grayscale(80%);
+  transition: 0.5s;
+}
+/* escalado hover */
+.card img:hover {
+  transform: scale(1.05, 1.05);
+}
+/* Padding para youtube */
+.youtube {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+/* Padding para noticias */
+.noticias {
+  padding-bottom: 20px;
+}
+/* Padding para el contenido de las noticias */
+.noticia__contenido {
+  padding: 10px;
+}
+/* Padding para último show */
+.ultimoShow {
+  padding-bottom: 20px;
+}
+/* filtro para img de ultimos show */
+.ultimoShow img {
+  filter: grayscale(80%);
+}
+/* Fondo y padding para Último disco */
+.ultimoDisco {
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+.ultimoDisco img {
+  filter: grayscale(80%);
+}
+/* gap para caja flex del footer */
+.footer__flex {
+  gap: 10px;
+}
+/* Tamaño logo */
+.footer__logo {
+  width: 200px;
+}
+@media (min-width: 768px) {
+  .footer__logo {
+    width: auto;
+  }
+}
+/* Tamaño de letra para el nav del footer y sus media queries */
+.footer__nav {
+  font-size: 1.5rem;
+}
+/* transition para los li del nav */
+.footer__nav li {
+  transition: 0.5s;
+}
+/* escalado al hacer hover */
+.footer__nav li:hover {
+  transform: scale(0.9, 0.9);
+}
+@media (min-width: 768px) {
+  .footer__nav {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .footer__nav {
+    font-size: 2.5rem;
+  }
+}
+/* tamaño íconos redes sociales footer y sus media queries */
+.footer__redesSociales img {
+  width: 30px;
+  height: 30px;
+  transition: 0.5s;
+}
+/* translate para íconos */
+.footer__redesSociales li a img:hover {
+  transform: translate(0px, -5px);
+}
+@media (min-width: 768px) {
+  .footer__redesSociales img {
+    width: 35px;
+    height: 35px;
+  }
+}
+@media (min-width: 768px) {
+  .footer__redesSociales img {
+    width: 40px;
+    height: 40px;
+  }
+}
+/* Tamaño letra en copyright y sus media queries */
+.copyright {
+  font-size: 1rem;
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  .copyright {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .copyright {
+    font-size: 2rem;
+  }
+}
+/* Link de copyright sin decoration */
+.copyright a {
+  text-decoration: none;
+  transition: 0.5s;
+}
+/* hover para nombre de autor */
+.copyright a:hover {
+  font-size: 3rem;
+}

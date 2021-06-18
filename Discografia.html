@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google Font Roboto -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link animte.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- link css propio -->
+    <link rel="stylesheet" href="Discografia.css" />
+    <title>Y Griega Música - Discografía</title>
+  </head>
+
+  <body>
+    <!-- header container fluid y con fondo azul -->
+    <header class="container-fluid fondoAzul header">
+      <!-- Navbar importada de bootstrap y fija -->
+      <nav
+        class="
+          navbar navbar-expand-lg navbar-dark
+          bg-dark
+          fixed-top
+          fondoAzulNoFoto
+          header__nav
+        "
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <!-- Logo en navbar -->
+            <img
+              class="header__nav__logo"
+              src="images/logo.png"
+              alt="Y Griega logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="
+                navbar-nav
+                me-auto
+                mb-2 mb-lg-0
+                w-100
+                justify-content-around
+              "
+            >
+              <li class="nav-item">
+                <a class="nav-link negro" aria-current="page" href="index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link negro" href="Biografia.html">Biografía</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active negro" href="#">Discografía</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle negro"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Galería
+                </a>
+                <!-- Dropdown con sus clases -->
+                <ul
+                  class="
+                    dropdown-menu dropdown-menu-dark
+                    header__nav__dropdown
+                    fondoBeige
+                  "
+                  aria-labelledby="navbarDropdown"
+                >
+                  <li>
+                    <a class="dropdown-item negro" href="Galeria.html#imagenes"
+                      >Imágenes</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item negro" href="Galeria.html#videos"
+                      >Videos</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item negro">
+                <a class="nav-link negro" href="Contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Caja flex para logo y redes sociales -->
+      <div
+        class="
+          position-relative
+          mt-auto
+          h-100
+          d-flex
+          flex-column
+          justify-content-end
+          align-items-center
+          header__flex
+        "
+      >
+        <!-- Logo header con animación slideInDown de animate.css y WOW.js -->
+        <img
+          class="
+            img-fluid
+            wow
+            animate__animated animate__slideInDown
+            header__logo
+          "
+          src="images/logo.png"
+          alt="Logo"
+        />
+        <!-- Nav redes sociales usando bootstrap y con animación slideInUp -->
+        <ul
+          class="
+            nav
+            justify-content-center
+            wow
+            animate__animated animate__slideInRight
+            header__redesSociales
+          "
+        >
+          <li class="nav-item">
+            <a class="nav-link" href="" alt="Spotify"
+              ><img src="images/spotify_icon.png" alt="Spotify"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href=""
+              ><img src="images/youtube_icon.png" alt="Youtube"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href=""
+              ><img src="images/facebook_icon.png" alt="Facebook"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href=""
+              ><img src="images/instagram_icon.png" alt="Instagram"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href=""
+              ><img src="images/twitter_icon.png" alt="Twitter"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- Main con fondo beige radial -->
+    <main class="fondoBeigeRadial">
+      <!-- Container para discografía -->
+      <div class="container roboto discografia">
+        <!-- Row para título -->
+        <div class="row">
+          <h2 class="text-center roboto subtitulo--negro">Discografía</h2>
+        </div>
+        <!-- Row para cada disco -->
+        <div class="row disco">
+          <!-- Col con imágen disco con su información en flex -->
+          <div
+            class="col-12 col-lg-3 d-flex flex-column justify-content-center"
+          >
+            <img
+              class="img-fluid"
+              src="https://picsum.photos/800/800?random=1"
+              alt=""
+            />
+            <h3 class="text-center">Hay que soltar</h3>
+            <p class="text-center">Año: 2003</p>
+            <p class="text-center">Sello: Pulse</p>
+          </div>
+          <!-- Col para tabla -->
+          <div class="col-12 col-lg-9 d-flex justify-content-center">
+            <table class="table table-hover table-borderless text-center">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Canción</th>
+                  <th scope="col">Compositor</th>
+                  <th scope="col">Duración</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Culminó la espera</td>
+                  <td>Carlos Gómez</td>
+                  <td>4:25</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Pantano</td>
+                  <td>Pedro Vizcarra</td>
+                  <td>4:40</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Búsqueda</td>
+                  <td>Carlos Gómez</td>
+                  <td>3:38</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Perdido en el espacio</td>
+                  <td>Pedro Vizcarra</td>
+                  <td>4:50</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>Luciérnaga</td>
+                  <td>Pedro Vizcarra</td>
+                  <td>8:38</td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>Gol</td>
+                  <td>Carlos Gómez</td>
+                  <td>5:10</td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>Preciado</td>
+                  <td>Pedro Vizcarra</td>
+                  <td>6:20</td>
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td>Van a ganar</td>
+                  <td>Carlos Gómez</td>
+                  <td>2:30</td>
+                </tr>
+                <tr>
+                  <th scope="row">9</th>
+                  <td>Solsticio</td>
+                  <td>Pedro Vizcarra</td>
+                  <td>1:05</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row disco">
+          <div
+            class="
+              col-12 col-lg-3
+              order-lg-2
+              d-flex
+              flex-column
+              justify-content-center
+            "
+          >
+            <img
+              class="img-fluid"
+              src="https://picsum.photos/800/800?random=2"
+              alt=""
+            />
+            <h3 class="text-center">Distancias</h3>
+            <p class="text-center">Año: 2005</p>
+            <p class="text-center">Sello: Pulse</p>
+          </div>
+          <div class="col-12 col-lg-9 d-flex justify-content-center">
+            <table class="table table-hover table-borderless text-center">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Canción</th>
+                  <th scope="col">Compositor</th>
+                  <th scope="col">Duración</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Si tan solo...</td>
+                  <td>Carlos Gómez</td>
+                  <td>4:25</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Paracaídas</td>
+                  <td>Pedro Vizcarra</td>
+                  <td>4:40</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Sembrando la duda</td>
+                  <td>Carlos Gómez</td>
+                  <td>3:38</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Panacea</td>
+                  <td>Pedro Vizcarra</td>
+                  <td>4:50</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>Ambición</td>
+                  <td>Pedro Vizcarra</td>
+                  <td>8:38</td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>Base de lana</td>
+                  <td>Carlos Gómez</td>
+                  <td>5:10</td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>Punto y coma</td>
+                  <td>Pedro Vizcarra</td>
+                  <td>6:20</td>
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td>A vos</td>
+                  <td>Carlos Gómez</td>
+                  <td>2:30</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row disco">
+          <div
+            class="col-12 col-lg-3 d-flex flex-column justify-content-center"
+          >
+            <img
+              class="img-fluid"
+              src="https://picsum.photos/800/800?random=3"
+              alt=""
+            />
+            <h3 class="text-center">Prisma</h3>
+            <p class="text-center">Año: 2007</p>
+            <p class="text-center">Sello: Pulse</p>
+          </div>
+          <div class="col-12 col-lg-9 d-flex justify-content-center">
+            <table class="table table-hover table-borderless text-center">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Canción</th>
+                  <th scope="col">Compositor</th>
+                  <th scope="col">Duración</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Caída libre</td>
+                  <td>Carlos Gómez</td>
+                  <td>4:25</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Interestelar</td>
+                  <td>Pedro Vizcarra</td>
+                  <td>4:40</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Triángulo de las Bermudas</td>
+                  <td>Carlos Gómez</td>
+                  <td>3:38</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Como ayer</td>
+                  <td>Pedro Vizcarra</td>
+                  <td>4:50</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>Prisma</td>
+                  <td>Pedro Vizcarra</td>
+                  <td>8:38</td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>Amasando el pasado</td>
+                  <td>Carlos Gómez</td>
+                  <td>5:10</td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>Presente</td>
+                  <td>Pedro Vizcarra</td>
+                  <td>6:20</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row disco">
+          <div
+            class="
+              col-12 col-lg-3
+              order-lg-2
+              d-flex
+              flex-column
+              justify-content-center
+            "
+          >
+            <img
+              class="img-fluid"
+              src="https://picsum.photos/800/800?random=4"
+              alt=""
+            />
+            <h3 class="text-center">Visitante de Neptuno</h3>
+            <p class="text-center">Año: 2009</p>
+            <p class="text-center">Sello: Pulse</p>
+          </div>
+          <div class="col-12 col-lg-9 d-flex justify-content-center">
+            <table class="table table-hover table-borderless text-center">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Canción</th>
+                  <th scope="col">Compositor</th>
+                  <th scope="col">Duración</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>La Perla</td>
+                  <td>Carlos Gómez</td>
+                  <td>4:25</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Humo de volcán</td>
+                  <td>Pedro Vizcarra</td>
+                  <td>4:40</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Vesubio</td>
+                  <td>Carlos Gómez</td>
+                  <td>3:38</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Cristalino</td>
+                  <td>Pedro Vizcarra</td>
+                  <td>4:50</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>Copo de nieve</td>
+                  <td>Pedro Vizcarra</td>
+                  <td>8:38</td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>Avalancha</td>
+                  <td>Carlos Gómez</td>
+                  <td>5:10</td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>División al infinito</td>
+                  <td>Pedro Vizcarra</td>
+                  <td>6:20</td>
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td>Adiós</td>
+                  <td>Carlos Gómez</td>
+                  <td>2:30</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Fondo azul con foto en footer -->
+    <footer class="fondoAzul footer">
+      <!-- Container fluid -->
+      <div class="container-fluid">
+        <!-- Caja flex -->
+        <div
+          class="
+            d-flex
+            flex-column
+            justify-content-center
+            align-items-center
+            p-4
+            footer_flex
+          "
+        >
+          <!-- Logo footer con animación slideInDown de animate.css y WOW.js -->
+          <img
+            class="wow animate__animated animate__slideInDown footer__logo"
+            src="images/logo.png"
+            alt="Logo"
+          />
+          <!-- Nav de footer -->
+          <ul
+            class="nav flex-column align-content-center text-center footer__nav"
+          >
+            <li class="nav-item">
+              <a class="nav-link negro" aria-current="page" href="index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link negro" href="Biografia.html">Biografía</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active negro" href="#">Discografía</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link negro" href="Galeria.html">Galería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link negro" href="Contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <!-- Redes sociales footer -->
+          <ul class="nav justify-content-center footer__redesSociales">
+            <li class="nav-item">
+              <a class="nav-link" href="" alt="Spotify"
+                ><img src="images/spotify_icon.png" alt="Spotify"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=""
+                ><img src="images/youtube_icon.png" alt="Youtube"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=""
+                ><img src="images/facebook_icon.png" alt="Facebook"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=""
+                ><img src="images/instagram_icon.png" alt="Instagram"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=""
+                ><img src="images/twitter_icon.png" alt="Twitter"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="col-6 copyright roboto negro">
+            <p>Copyright 2021</p>
+          </div>
+          <div class="col-6 text-end copyright roboto negro">
+            <p>Sitio por <a class="negro" href="">Nadir Hierro</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Script WOW.js -->
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>
