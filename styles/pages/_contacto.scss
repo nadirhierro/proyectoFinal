@@ -1,0 +1,9 @@
+// Include de padding vertical y tamaño para pantallas grandes
+.formulario {
+  @include padding-X(0, $size-10 * 2);
+  @media (min-width: 1200px) {
+    & {
+      width: 50%;
+    }
+  }
+}

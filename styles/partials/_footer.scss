@@ -1,0 +1,72 @@
+// Anidación del footer
+.footer__flex {
+  gap: $gap-10;
+}
+.footer__logo {
+  width: $size-10 * 20;
+}
+@media (min-width: 768px) {
+  .footer__logo {
+    width: auto;
+  }
+}
+// Anidación footer__nav
+.footer__nav {
+  font-size: 1.5rem;
+
+  & li {
+    @include links;
+    & a {
+      color: $color-beige-menu;
+    }
+  }
+  @media (min-width: 768px) {
+    & {
+      font-size: 2rem;
+    }
+  }
+  @media (min-width: 992px) {
+    & {
+      font-size: 2.5rem;
+    }
+  }
+}
+// Anidación footer_redesSociales
+.footer__redesSociales img {
+  @include sizes($size-10 * 3, $size-10 * 3);
+  @include redes;
+  @media (min-width: 768px) {
+    & {
+      @include sizes($size-10 * 3.5, $size-10 * 3.5);
+    }
+  }
+  @media (min-width: 992px) {
+    & {
+      @include sizes($size-10 * 4, $size-10 * 4);
+    }
+  }
+}
+// Anidación copyright
+.copyright {
+  font-size: 1rem;
+  font-weight: bold;
+  color: $color-beige-menu;
+  @media (min-width: 768px) {
+    & {
+      font-size: 1.5rem;
+    }
+  }
+  @media (min-width: 992px) {
+    & {
+      font-size: 2rem;
+    }
+  }
+  & a {
+    text-decoration: none;
+    transition: $transition-5;
+    color: $color-beige-menu;
+    &:hover {
+      font-size: 3rem;
+    }
+  }
+}

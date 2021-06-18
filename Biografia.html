@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Título -->
+    <title>Y Griega Música - Biografía</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Descripción -->
+    <meta
+      name="description"
+      content="Sitio oficial de Y Griega, sección Biografía, aquí podrás conocer la historia e integrantes de la banda"
+    />
+    <!-- Keywords -->
+    <meta
+      name="keywords"
+      content="y griega, música, música argentina, rock, rock progresivo, conciertos, shows, recitales, biografía"
+    />
     <!-- link bootstrap css -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
@@ -34,8 +46,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <!-- link css propio -->
-    <link rel="stylesheet" href="Biografia.css" />
-    <title>Y Griega Música - Biografía</title>
+    <link rel="stylesheet" href="./styles/main.css" />
   </head>
 
   <body>
@@ -56,7 +67,7 @@
             <!-- Logo en navbar -->
             <img
               class="header__nav__logo"
-              src="images/logo.png"
+              src="./images/logo.png"
               alt="Y Griega logo"
             />
           </a>
@@ -147,16 +158,16 @@
         "
       >
         <!-- Logo header con animación slideInDown de animate.css y WOW.js -->
-        <img
-          class="
-            img-fluid
-            wow
-            animate__animated animate__slideInDown
-            header__logo
-          "
-          src="images/logo.png"
-          alt="Logo"
-        />
+        <h1 class="header__logo">
+          <a href="./index.html">
+            <img
+              class="wow animate__animated animate__slideInDown"
+              src="./images/logo.png"
+              alt="Y Griega Música"
+            />
+          </a>
+          <span>Y Griega Música</span>
+        </h1>
         <!-- Nav redes sociales usando bootstrap y con animación slideInUp -->
         <ul
           class="
@@ -195,15 +206,14 @@
         </ul>
       </div>
     </header>
-    <!-- Fondo Beige radial para el main -->
     <main class="fondoBeigeRadial">
       <!-- Container-fluid para integrantes -->
-      <div class="container-fluid">
-        <!-- Row para integrantes -->
-        <div class="row justify-content-around integrantes">
+      <div class="container-fluid integrantes">
+        <!-- Row para tarjetas de integrantes -->
+        <div class="row justify-content-around integrantes__tarjetas">
           <!-- Col para título -->
           <div class="col-12">
-            <h2 class="roboto subtitulo--negro">Integrantes</h2>
+            <h2 class="roboto subtitulo negro">Integrantes</h2>
           </div>
           <!-- Cols responsive para tarjeta de integrantes y animación -->
           <div
@@ -211,7 +221,7 @@
               col-sm-6 col-lg-4
               wow
               animate__animated animate__flipInY
-              tarjeta
+              integrantes__tarjetas__tarjeta
             "
           >
             <div class="card text-center colorA fondoAzul">
@@ -231,7 +241,7 @@
               col-sm-6 col-lg-4
               wow
               animate__animated animate__flipInY
-              tarjeta
+              integrantes__tarjetas__tarjeta
             "
           >
             <div class="card text-center colorA fondoAzul">
@@ -251,7 +261,7 @@
               col-sm-6 col-lg-4
               wow
               animate__animated animate__flipInY
-              tarjeta
+              integrantes__tarjetas__tarjeta
             "
           >
             <div class="card text-center colorA fondoAzul">
@@ -271,7 +281,7 @@
               col-sm-6 col-lg-4
               wow
               animate__animated animate__flipInY
-              tarjeta
+              integrantes__tarjetas__tarjeta
             "
           >
             <div class="card text-center colorA fondoAzul">
@@ -291,7 +301,7 @@
               col-sm-6 col-lg-4
               wow
               animate__animated animate__flipInY
-              tarjeta
+              integrantes__tarjetas__tarjeta
             "
           >
             <div class="card text-center colorA fondoAzul">
@@ -311,7 +321,7 @@
               col-sm-6 col-lg-4
               wow
               animate__animated animate__flipInY
-              tarjeta
+              integrantes__tarjetas__tarjeta
             "
           >
             <div class="card text-center colorA fondoAzul">
@@ -331,9 +341,11 @@
       <!-- Container para biografía -->
       <div class="container-fluid biografia">
         <!-- Título Biografía -->
-        <h2 class="text-center roboto subtitulo--negro">Biografía</h2>
+        <h2 class="text-center roboto subtitulo negro">Biografía</h2>
         <!-- Row para etapas -->
-        <div class="row justify-content-center align-items-center etapa">
+        <div
+          class="row justify-content-center align-items-center biografia__etapa"
+        >
           <!-- Col flex para la imagen -->
           <div class="col-12 col-lg-4 d-flex justify-content-center">
             <img
@@ -349,7 +361,7 @@
               wow
               animate__animated animate__zoomInRight
               negro
-              contenido
+              biografia__etapa__contenido
             "
           >
             <h3 class="text-center roboto negro">Comienzos: 2000-2002</h3>
@@ -374,7 +386,9 @@
             </p>
           </div>
         </div>
-        <div class="row justify-content-center align-items-center etapa">
+        <div
+          class="row justify-content-center align-items-center biografia__etapa"
+        >
           <div class="col-12 col-lg-6 d-flex justify-content-center order-lg-2">
             <img
               class="img-fluid"
@@ -388,7 +402,7 @@
               wow
               animate__animated animate__zoomInLeft
               negro
-              contenido
+              biografia__etapa__contenido
             "
           >
             <h3 class="text-center roboto negro">Primer disco: 2003-2004</h3>
@@ -411,10 +425,12 @@
             </p>
           </div>
         </div>
-        <div class="row justify-content-center align-items-center etapa">
+        <div
+          class="row justify-content-center align-items-center biografia__etapa"
+        >
           <div class="col-12 d-flex justify-content-center">
             <img
-              class="img-fluid"
+              class="img-fluid biografia__etapa__imgCons"
               src="https://picsum.photos/1200/400?random=2"
               alt="Foto comienzos"
             />
@@ -425,7 +441,7 @@
               wow
               animate__animated animate__zoomInDown
               negro
-              contenido
+              biografia__etapa__contenido--cons
             "
           >
             <h3 class="text-center roboto negro">Consagracion: 2005-2009</h3>
@@ -448,7 +464,9 @@
             </p>
           </div>
         </div>
-        <div class="row justify-content-center align-items-center etapa">
+        <div
+          class="row justify-content-center align-items-center biografia__etapa"
+        >
           <div class="col-12"></div>
           <div class="col-12 col-lg-4 d-flex justify-content-center">
             <img
@@ -463,7 +481,7 @@
               wow
               animate__animated animate__zoomInRight
               negro
-              contenido
+              biografia__etapa__contenido
             "
           >
             <h3 class="text-center roboto negro">Actualidad: 2010-Presente</h3>

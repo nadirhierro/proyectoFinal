@@ -1,0 +1,512 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.colorA {
+  color: #96846a !important;
+}
+
+.negro {
+  color: black !important;
+}
+
+.fondoAzul {
+  background-image: url(/images/fondo.jpeg);
+  background-color: #122335 !important;
+  background-blend-mode: darken;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.fondoAzulNoFoto {
+  background-color: #122335 !important;
+}
+
+.fondoBeige {
+  background-color: #96846a !important;
+}
+
+.fondoBeigeRadial {
+  background: radial-gradient(circle, rgba(150, 132, 106, 0.83237) 46%, rgba(111, 96, 96, 0.837973) 100%);
+}
+
+.subtitulo {
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .subtitulo {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .subtitulo {
+    font-size: 3.5rem;
+  }
+}
+
+.header {
+  height: auto;
+}
+
+.header--nav {
+  height: 100vh;
+}
+
+.header .navbar-toggler-icon {
+  background-image: url(/images/hamburguer.png) !important;
+}
+
+.header__nav__logo {
+  height: 40px;
+  width: 105.2px;
+}
+
+.header__nav li {
+  transition: 0.5s !important;
+}
+
+.header__nav li:hover {
+  transform: scale(0.9, 0.9) !important;
+}
+
+.header__nav li a {
+  font-size: 1.4rem;
+  color: #96846a !important;
+}
+
+.header__nav li ul li a {
+  font-size: 1.2rem;
+  color: black !important;
+}
+
+.header__flex {
+  gap: 10px;
+}
+
+.header__logo {
+  margin-top: 90px;
+  letter-spacing: -9999px;
+}
+
+.header__logo span {
+  color: transparent;
+}
+
+.header__redesSociales img {
+  height: 30px;
+  width: 30px;
+  transition: 0.5s !important;
+}
+
+.header__redesSociales img:hover {
+  transform: translate(0, -5px);
+}
+
+@media (min-width: 768px) {
+  .header__redesSociales img {
+    height: 35px;
+    width: 35px;
+  }
+}
+
+@media (min-width: 992px) {
+  .header__redesSociales img {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+.header__boton a {
+  text-decoration: none;
+}
+
+.proximasFechas {
+  padding-top: 45px;
+  padding-bottom: 20px;
+}
+
+.proximasFechas__tarjetas {
+  justify-content: space-between;
+  gap: 10px;
+  font-weight: bold !important;
+}
+
+.proximasFechas__tarjetas__tarjeta img {
+  filter: grayscale(80%) !important;
+  transition: 0.5s !important;
+}
+
+.proximasFechas__tarjetas__tarjeta img:hover {
+  transform: scale(1.05, 1.05) !important;
+}
+
+@media (min-width: 576px) {
+  .proximasFechas__tarjetas {
+    gap: 10px;
+  }
+  .proximasFechas__tarjetas__tarjeta {
+    flex-basis: 49%;
+  }
+}
+
+@media (min-width: 992px) {
+  .proximasFechas__tarjetas {
+    gap: 5px;
+  }
+  .proximasFechas__tarjetas__tarjeta {
+    flex-basis: 24%;
+  }
+}
+
+.youtube, .noticias, .ultimoShow, .ultimoDisco {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 1200px) {
+  .noticias__noticia__contenido {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+.ultimoShow img {
+  filter: grayscale(80%) !important;
+  transition: 0.5s !important;
+}
+
+.ultimoShow img:hover {
+  transform: scale(1.05, 1.05) !important;
+}
+
+.ultimoDisco {
+  font-weight: bold !important;
+}
+
+.ultimoDisco img {
+  padding-bottom: 10px;
+  filter: grayscale(80%) !important;
+  transition: 0.5s !important;
+}
+
+.ultimoDisco img:hover {
+  transform: scale(1.05, 1.05) !important;
+}
+
+.integrantes, .biografia {
+  padding-top: 0;
+  padding-bottom: 20px;
+}
+
+.integrantes__tarjetas {
+  gap: 10px;
+}
+
+@media (min-width: 576px) {
+  .integrantes__tarjetas__tarjeta {
+    flex-basis: 49%;
+  }
+}
+
+@media (min-width: 992px) {
+  .integrantes__tarjetas__tarjeta {
+    flex-basis: 32%;
+  }
+}
+
+.integrantes__tarjetas__tarjeta img {
+  filter: grayscale(80%) !important;
+  transition: 0.5s !important;
+}
+
+.integrantes__tarjetas__tarjeta img:hover {
+  transform: scale(1.05, 1.05) !important;
+}
+
+.biografia__etapa {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+
+.biografia__etapa img {
+  filter: grayscale(80%) !important;
+  transition: 0.5s !important;
+  padding-top: 0;
+  padding-bottom: 10px;
+}
+
+.biografia__etapa img:hover {
+  transform: scale(1.05, 1.05) !important;
+}
+
+@media (min-width: 576px) {
+  .biografia__etapa img {
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .biografia__etapa img {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.biografia__etapa img:hover {
+  transform: scale(1.05, 1.05) !important;
+}
+
+@media (min-width: 992px) {
+  .biografia__etapa__imgCons {
+    padding-bottom: 20px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .biografia__etapa__contenido {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .biografia__etapa__contenido--cons {
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+}
+
+.biografia__etapa__contenido span {
+  font-style: italic;
+}
+
+.discografia img {
+  padding-top: 0;
+  padding-bottom: 10px;
+  filter: grayscale(80%) !important;
+  transition: 0.5s !important;
+}
+
+.discografia img:hover {
+  transform: scale(1.05, 1.05) !important;
+}
+
+.disco {
+  padding: 20px;
+  font-weight: bold !important;
+}
+
+.imagenes {
+  padding-top: 45px;
+  padding-bottom: 0;
+}
+
+.imagenes__grid {
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6" "img7" "img8";
+  grid-template-rows: repeat 8, 1fr;
+  overflow: hidden;
+  gap: 15px;
+}
+
+.imagenes__grid .img1 {
+  grid-area: img1;
+}
+
+.imagenes__grid .img2 {
+  grid-area: img2;
+}
+
+.imagenes__grid .img3 {
+  grid-area: img3;
+}
+
+.imagenes__grid .img4 {
+  grid-area: img4;
+}
+
+.imagenes__grid .img5 {
+  grid-area: img5;
+}
+
+.imagenes__grid .img6 {
+  grid-area: img6;
+}
+
+.imagenes__grid .img7 {
+  grid-area: img7;
+}
+
+.imagenes__grid .img8 {
+  grid-area: img8;
+}
+
+.imagenes__grid img {
+  height: 100%;
+  width: 100%;
+  filter: grayscale(80%) !important;
+  transition: 0.5s !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 1;
+}
+
+.imagenes__grid img:hover {
+  transform: scale(1.05, 1.05) !important;
+}
+
+.imagenes__grid img:hover {
+  position: relative;
+  z-index: 2;
+}
+
+@media (min-width: 768px) {
+  .imagenes__grid {
+    grid-template-areas: "img1 img2 img2 img3" "img5 img2 img2 img4" "img5 img6 img6 img6" "img7 img7 img7 img7" "img8 img8 img8 img8";
+    grid-template-rows: repeat 5, 1fr;
+    grid-template-columns: repeat 4, 1fr;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .imagenes__grid {
+    grid-template-areas: "img1 img2 img2 img3 img4" "img5 img2 img2 img6 img6" "img5 img7 img7 img7 img7" "img8 img8 img8 img8 img8";
+    grid-template-rows: repeat 4, 1fr;
+    grid-template-columns: repeat 5, 1fr;
+  }
+}
+
+@media (min-width: 1200px) {
+  .imagenes__grid {
+    gap: 5px;
+  }
+}
+
+.videos {
+  padding-top: 45px;
+  padding-bottom: 20px;
+  gap: 10px;
+}
+
+@media (min-width: 768px) {
+  .videos__video {
+    flex-basis: 32%;
+  }
+}
+
+.formulario {
+  padding-top: 0;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 1200px) {
+  .formulario {
+    width: 50%;
+  }
+}
+
+.footer__flex {
+  gap: 10px;
+}
+
+.footer__logo {
+  width: 200px;
+}
+
+@media (min-width: 768px) {
+  .footer__logo {
+    width: auto;
+  }
+}
+
+.footer__nav {
+  font-size: 1.5rem;
+}
+
+.footer__nav li {
+  transition: 0.5s !important;
+}
+
+.footer__nav li:hover {
+  transform: scale(0.9, 0.9) !important;
+}
+
+.footer__nav li a {
+  color: #96846a !important;
+}
+
+@media (min-width: 768px) {
+  .footer__nav {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer__nav {
+    font-size: 2.5rem;
+  }
+}
+
+.footer__redesSociales img {
+  height: 30px;
+  width: 30px;
+  transition: 0.5s !important;
+}
+
+.footer__redesSociales img:hover {
+  transform: translate(0, -5px);
+}
+
+@media (min-width: 768px) {
+  .footer__redesSociales img {
+    height: 35px;
+    width: 35px;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer__redesSociales img {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+.copyright {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #96846a !important;
+}
+
+@media (min-width: 768px) {
+  .copyright {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .copyright {
+    font-size: 2rem;
+  }
+}
+
+.copyright a {
+  text-decoration: none;
+  transition: 0.5s !important;
+  color: #96846a !important;
+}
+
+.copyright a:hover {
+  font-size: 3rem;
+}
+/*# sourceMappingURL=main.css.map */

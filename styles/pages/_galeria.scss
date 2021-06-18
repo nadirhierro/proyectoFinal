@@ -1,0 +1,95 @@
+// Anidación de div imágenes
+.imagenes {
+  // Include de padding y distribución de la grilla según breakpoint
+  @include padding-X($size-10 * 4.5, 0);
+  &__grid {
+    padding-bottom: $size-10 * 2;
+    display: grid;
+    grid-template-areas:
+      "img1"
+      "img2"
+      "img3"
+      "img4"
+      "img5"
+      "img6"
+      "img7"
+      "img8";
+    grid-template-rows: repeat (8, 1fr);
+    overflow: hidden;
+    gap: $gap-10 * 1.5;
+    .img1 {
+      grid-area: img1;
+    }
+    .img2 {
+      grid-area: img2;
+    }
+    .img3 {
+      grid-area: img3;
+    }
+    .img4 {
+      grid-area: img4;
+    }
+    .img5 {
+      grid-area: img5;
+    }
+    .img6 {
+      grid-area: img6;
+    }
+    .img7 {
+      grid-area: img7;
+    }
+    .img8 {
+      grid-area: img8;
+    }
+    & img {
+      // Include de tamaños, filtro y transición, sombra y z-index para imágenes
+      @include sizes(100%, 100%);
+      @include fotos;
+      box-shadow: $img-shadow;
+      z-index: 1;
+      &:hover {
+        position: relative;
+        z-index: 2;
+      }
+    }
+    @media (min-width: 768px) {
+      & {
+        grid-template-areas:
+          "img1 img2 img2 img3"
+          "img5 img2 img2 img4"
+          "img5 img6 img6 img6"
+          "img7 img7 img7 img7"
+          "img8 img8 img8 img8";
+        grid-template-rows: repeat (5, 1fr);
+        grid-template-columns: repeat (4, 1fr);
+        gap: $gap-10;
+      }
+    }
+    @media (min-width: 992px) {
+      & {
+        grid-template-areas:
+          "img1 img2 img2 img3 img4"
+          "img5 img2 img2 img6 img6"
+          "img5 img7 img7 img7 img7"
+          "img8 img8 img8 img8 img8";
+        grid-template-rows: repeat (4, 1fr);
+        grid-template-columns: repeat (5, 1fr);
+      }
+    }
+    @media (min-width: 1200px) {
+      & {
+        gap: $gap-10/2;
+      }
+    }
+  }
+}
+.videos {
+  // Include padding para videos
+  @include padding-X($size-10 * 4.5, $size-10 * 2);
+  gap: $gap-10;
+}
+@media (min-width: 768px) {
+  .videos__video {
+    flex-basis: 32%;
+  }
+}

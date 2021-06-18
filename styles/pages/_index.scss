@@ -1,0 +1,64 @@
+// Próximas fechas y su anidación
+.proximasFechas {
+  // Include de padding
+  @include padding-X($size-10 * 4.5, $size-10 * 2);
+  &__tarjetas {
+    justify-content: space-between;
+    gap: $gap-10;
+    font-weight: $font-bold;
+    &__tarjeta img {
+      // Include de filtro y transición para imágenes
+      @include fotos;
+    }
+    // gap y flex basis según breakpoint para las tarjetas
+    @media (min-width: 576px) {
+      & {
+        gap: $gap-10;
+
+        &__tarjeta {
+          flex-basis: 49%;
+        }
+      }
+    }
+    @media (min-width: 992px) {
+      & {
+        gap: $gap-10 / 2;
+
+        &__tarjeta {
+          flex-basis: 24%;
+        }
+      }
+    }
+  }
+}
+.youtube {
+  @include padding-X($size-10 * 2, $size-10 * 2);
+}
+// Extend en noticias, último show y último disco
+.noticias {
+  // Extend del padding de youtube
+  @extend .youtube;
+  &__noticia {
+    // Padding para separar el texto de los bordes en pantallas grandes
+    @media (min-width: 1200px) {
+      &__contenido {
+        @include padding-Y($size-10 * 2, $size-10 * 2);
+      }
+    }
+  }
+}
+.ultimoShow {
+  @extend .youtube;
+
+  & img {
+    @include fotos;
+  }
+}
+.ultimoDisco {
+  @extend .youtube;
+  font-weight: $font-bold;
+  & img {
+    padding-bottom: $size-10;
+    @include fotos;
+  }
+}

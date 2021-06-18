@@ -1,0 +1,56 @@
+// Anidación del header e include
+.header {
+  height: auto;
+  // 100%vh para index
+  &--nav {
+    height: 100vh;
+  }
+  // Cambio de ícono hamburguesa
+  & .navbar-toggler-icon {
+    background-image: url(/images/hamburguer.png) !important;
+  }
+  &__nav__logo {
+    // Sizes para el logo del nav
+    @include sizes($size-10 * 10.52, $size-10 * 4);
+  }
+  // Transition para los li del nav, formato submenú
+  &__nav li {
+    @include links;
+    & a {
+      font-size: 1.4rem;
+      color: $color-beige-menu;
+    }
+    & ul li a {
+      font-size: 1.2rem;
+      color: $color-negro;
+    }
+  }
+  &__flex {
+    gap: $gap-10;
+  }
+  &__logo {
+    margin-top: $size-10 * 9;
+    letter-spacing: -9999px;
+    & span {
+      color: transparent;
+    }
+  }
+  &__redesSociales img {
+    @include sizes($size-10 * 3, $size-10 * 3);
+    @include redes;
+    @media (min-width: 768px) {
+      & {
+        @include sizes($size-10 * 3.5, $size-10 * 3.5);
+      }
+    }
+    @media (min-width: 992px) {
+      & {
+        @include sizes($size-10 * 4, $size-10 * 4);
+      }
+    }
+  }
+
+  &__boton a {
+    text-decoration: none;
+  }
+}

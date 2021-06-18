@@ -1,0 +1,10 @@
+// Padding, filtro y transición para imágenes de disco
+.discografia img {
+  @include padding-X(0, $size-10);
+  @include fotos;
+}
+// Padding para cada disco y negrita
+.disco {
+  padding: $size-10 * 2;
+  font-weight: $font-bold;
+}

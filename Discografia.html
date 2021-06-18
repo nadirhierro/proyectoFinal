@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Título -->
+    <title>Y Griega Música - Discografía</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Descripción -->
+    <meta
+      name="description"
+      content="Sitio oficial de Y Griega, sección Discografía, donde podrás escuchar y encontrar información relativa a los discos"
+    />
+    <!-- Keywords -->
+    <meta
+      name="keywords"
+      content="y griega, bandas, música, música argentina, rock, rock progresivo, conciertos, shows, recitales, videos, discografía"
+    />
     <!-- link bootstrap css -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
@@ -34,8 +46,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <!-- link css propio -->
-    <link rel="stylesheet" href="Discografia.css" />
-    <title>Y Griega Música - Discografía</title>
+    <link rel="stylesheet" href="./styles/main.css" />
   </head>
 
   <body>
@@ -56,7 +67,7 @@
             <!-- Logo en navbar -->
             <img
               class="header__nav__logo"
-              src="images/logo.png"
+              src="./images/logo.png"
               alt="Y Griega logo"
             />
           </a>
@@ -145,16 +156,16 @@
         "
       >
         <!-- Logo header con animación slideInDown de animate.css y WOW.js -->
-        <img
-          class="
-            img-fluid
-            wow
-            animate__animated animate__slideInDown
-            header__logo
-          "
-          src="images/logo.png"
-          alt="Logo"
-        />
+        <h1 class="header__logo">
+          <a href="./index.html">
+            <img
+              class="wow animate__animated animate__slideInDown"
+              src="./images/logo.png"
+              alt="Y Griega Música"
+            />
+          </a>
+          <span>Y Griega Música</span>
+        </h1>
         <!-- Nav redes sociales usando bootstrap y con animación slideInUp -->
         <ul
           class="
@@ -199,10 +210,10 @@
       <div class="container roboto discografia">
         <!-- Row para título -->
         <div class="row">
-          <h2 class="text-center roboto subtitulo--negro">Discografía</h2>
+          <h2 class="text-center roboto subtitulo negro">Discografía</h2>
         </div>
         <!-- Row para cada disco -->
-        <div class="row disco">
+        <div class="row align-items-center disco">
           <!-- Col con imágen disco con su información en flex -->
           <div
             class="col-12 col-lg-3 d-flex flex-column justify-content-center"
@@ -210,7 +221,7 @@
             <img
               class="img-fluid"
               src="https://picsum.photos/800/800?random=1"
-              alt=""
+              alt="Portada Hay que soltar"
             />
             <h3 class="text-center">Hay que soltar</h3>
             <p class="text-center">Año: 2003</p>
@@ -286,7 +297,7 @@
             </table>
           </div>
         </div>
-        <div class="row disco">
+        <div class="row align-items-center disco">
           <div
             class="
               col-12 col-lg-3
@@ -299,7 +310,7 @@
             <img
               class="img-fluid"
               src="https://picsum.photos/800/800?random=2"
-              alt=""
+              alt="Portada Distancias"
             />
             <h3 class="text-center">Distancias</h3>
             <p class="text-center">Año: 2005</p>
@@ -368,14 +379,14 @@
             </table>
           </div>
         </div>
-        <div class="row disco">
+        <div class="row align-items-center disco">
           <div
             class="col-12 col-lg-3 d-flex flex-column justify-content-center"
           >
             <img
               class="img-fluid"
               src="https://picsum.photos/800/800?random=3"
-              alt=""
+              alt="Portada Prisma"
             />
             <h3 class="text-center">Prisma</h3>
             <p class="text-center">Año: 2007</p>
@@ -438,7 +449,7 @@
             </table>
           </div>
         </div>
-        <div class="row disco">
+        <div class="row align-items-center disco">
           <div
             class="
               col-12 col-lg-3
@@ -451,7 +462,7 @@
             <img
               class="img-fluid"
               src="https://picsum.photos/800/800?random=4"
-              alt=""
+              alt="Portada Visitante de Neptuno"
             />
             <h3 class="text-center">Visitante de Neptuno</h3>
             <p class="text-center">Año: 2009</p>

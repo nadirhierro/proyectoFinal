@@ -1,0 +1,71 @@
+// Integrantes y su anidación
+.integrantes {
+  // Include de padding vertical
+  @include padding-X(0, $size-10 * 2);
+  // Gap para tarjetas y flex basis según breakpoint
+  &__tarjetas {
+    gap: $gap-10;
+    @media (min-width: 576px) {
+      &__tarjeta {
+        flex-basis: 49%;
+      }
+    }
+    @media (min-width: 992px) {
+      &__tarjeta {
+        flex-basis: 32%;
+      }
+    }
+
+    &__tarjeta img {
+      // include de filtro y transition
+      @include fotos;
+    }
+  }
+}
+// Biografía y su anidación
+.biografia {
+  // Extend para el padding
+  @extend .integrantes;
+  &__etapa {
+    @include padding-X($size-10 * 2, $size-10 * 2);
+    overflow: hidden;
+    & img {
+      // Include de filtro y transition, padding para imágenes según brakpoint
+      @include fotos;
+      @include padding-X(0, $size-10);
+      @media (min-width: 576px) {
+        & {
+          @include padding-X(0, $size-10 * 2);
+        }
+      }
+      @media (min-width: 992px) {
+        & {
+          @include padding-X(0, 0);
+        }
+      }
+      &:hover {
+        transform: $scaleUp;
+      }
+    }
+    // Padding para imagen de etapa Consagración para despegarlo del texto a partir de breakpoint
+    @media (min-width: 992px) {
+      &__imgCons {
+        padding-bottom: ($size-10 * 2) !important;
+      }
+    }
+    // Padding para contenido de etapas para despegar de los bordes en pantallas grandes
+    &__contenido {
+      @media (min-width: 1200px) {
+        & {
+          @include padding-Y($size-10 * 3, $size-10 * 3);
+        }
+        &--cons {
+          @include padding-Y($size-10 * 8, $size-10 * 8);
+        }
+      }
+      & span {
+        font-style: italic;
+      }
+    }
+  }
+}

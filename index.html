@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Título -->
+    <title>Y Griega Música - Inicio</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Descripción -->
+    <meta
+      name="description"
+      content="Sitio oficial de Y Griega, donde podrás encontrar información general, próximas fechas, noticias y contenido multimedia de la banda"
+    />
+    <!-- Keywords -->
+    <meta
+      name="keywords"
+      content="y griega, bandas, música, música argentina, rock, rock progresivo, conciertos, shows, recitales, videos"
+    />
     <!-- link bootstrap css -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
@@ -34,12 +46,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <!-- link css propio -->
-    <link rel="stylesheet" href="index.css" />
-    <title>Y Griega Música - Inicio</title>
+    <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
     <!-- header container fluid y con fondo azul -->
-    <header class="container-fluid fondoAzul header">
+    <header class="container-fluid fondoAzul header header--nav">
       <!-- Navbar importada de bootstrap y fija -->
       <nav
         class="
@@ -55,7 +66,7 @@
             <!-- Logo en navbar -->
             <img
               class="header__nav__logo"
-              src="images/logo.png"
+              src="./images/logo.png"
               alt="Y Griega logo"
           /></a>
           <button
@@ -144,11 +155,16 @@
         "
       >
         <!-- Logo header con animación slideInDown de animate.css y WOW.js -->
-        <img
-          class="wow animate__animated animate__slideInDown header__logo"
-          src="images/logo.png"
-          alt="Logo"
-        />
+        <h1 class="header__logo">
+          <a href="./index.html">
+            <img
+              class="wow animate__animated animate__slideInDown"
+              src="./images/logo.png"
+              alt="Y Griega Música"
+            />
+          </a>
+          <span>Y Griega Música</span>
+        </h1>
         <!-- Nav redes sociales usando bootstrap y con animación slideInUp -->
         <ul
           class="
@@ -207,16 +223,16 @@
         id="proximasFechas"
         class="container-fluid fondoBeige proximasFechas"
       >
-        <h2 class="text-center subtitulo--negro roboto">Próximas fechas</h2>
+        <h2 class="text-center subtitulo negro roboto">Próximas fechas</h2>
         <!-- Row para cards de bootstrap -->
-        <div class="row tarjetas">
+        <div class="row proximasFechas__tarjetas">
           <!-- Divs de las columnas para posicionar cada card y animación flipIn -->
           <div
             class="
               col-sm-6 col-lg-3
               wow
               animate__animated animate__flipInY animate__slow
-              tarjeta
+              proximasFechas__tarjetas__tarjeta
             "
           >
             <!-- fondo de tarjeta azul con foto -->
@@ -267,18 +283,18 @@
               col-sm-6 col-lg-3
               wow
               animate__animated animate__flipInY
-              tarjeta
+              proximasFechas__tarjetas__tarjeta
             "
           >
             <div class="card text-center colorA fondoAzul">
               <img
                 src="https://picsum.photos/800?random=2"
                 class="card-img-top"
-                alt="Polideportivo Villa Crespo"
+                alt="Auditorio Villa Crespo"
               />
               <div class="card-body">
                 <h5 class="card-title">10/09 19hs</h5>
-                <p class="card-text">Polideportivo Villa Crespo</p>
+                <p class="card-text">Auditorio Villa Crespo</p>
                 <div class="dropdown">
                   <a
                     class="btn btn-dark dropdown-toggle fondoBeige negro"
@@ -316,7 +332,7 @@
               col-sm-6 col-lg-3
               wow
               animate__animated animate__flipInY
-              tarjeta
+              proximasFechas__tarjetas__tarjeta
             "
           >
             <div class="card text-center colorA fondoAzul">
@@ -365,7 +381,7 @@
               col-sm-6 col-lg-3
               wow
               animate__animated animate__flipInY animate__slow
-              tarjeta
+              proximasFechas__tarjetas__tarjeta
             "
           >
             <div class="card text-center colorA fondoAzul">
@@ -432,18 +448,25 @@
       <!-- Container fluid para noticias con fondo beige -->
       <div class="container-fluid fondoBeigeRadial noticias">
         <!-- Título centrado y negro -->
-        <h2 class="text-center subtitulo--negro roboto">Noticias</h2>
+        <h2 class="text-center subtitulo negro roboto">Noticias</h2>
         <!-- Row para noticias -->
         <div class="row">
           <!-- Distribución de las columnas responsive en noticias -->
-          <div class="col-md-6 wow animate__animated animate__zoomIn noticia">
-            <h3 class="text-center noticia__titulo">
+          <div
+            class="
+              col-md-6
+              wow
+              animate__animated animate__zoomIn
+              noticias__noticia
+            "
+          >
+            <h3 class="text-center noticias__noticia__titulo">
               <!-- Badge para título de noticia -->
               <span class="badge rounded-pill bg-dark fondoAzulNoFoto colorA"
                 >Un nuevo proyecto</span
               >
             </h3>
-            <div class="noticia__contenido">
+            <div class="noticias__noticia__contenido">
               <p>
                 La banda se encuentra trabajando en una nueva producción:
                 "Colores infames", el nuevo LP que pronto saldrá a través de las
@@ -454,8 +477,15 @@
               <p>El disco contará con 11 canciones.</p>
             </div>
           </div>
-          <div class="col-md-6 wow animate__animated animate__zoomIn noticia">
-            <h3 class="text-center noticia__titulo">
+          <div
+            class="
+              col-md-6
+              wow
+              animate__animated animate__zoomIn
+              noticias__noticia
+            "
+          >
+            <h3 class="text-center noticias__noticia__titulo">
               <span
                 class="
                   badge
@@ -468,7 +498,7 @@
                 Se suma Gustavo López</span
               >
             </h3>
-            <div class="noticia__contenido">
+            <div class="noticias__noticia__contenido">
               <p>
                 Y Griega se complace en informar la nueva incorporación en la
                 banda: Se trata de Gustavo López, saxofonista de reconocida
@@ -485,7 +515,7 @@
       <div class="container-fluid fondoAzul ultimoShow">
         <!-- Container dentro del fluid para enmarcar -->
         <div class="container">
-          <h2 class="subtitulo--beige roboto">Último show</h2>
+          <h2 class="subtitulo colorA roboto">Último show</h2>
           <!-- Carousel para las fotos del último show, importado de Boostrap -->
           <div
             id="carouselUltimoShow"
@@ -546,9 +576,9 @@
       <div class="container-fluid fondoBeigeRadial roboto ultimoDisco">
         <div class="container">
           <div class="row">
-            <h2 class="roboto subtitulo--negro">Último disco</h2>
+            <h2 class="roboto subtitulo negro">Último disco</h2>
           </div>
-          <div class="row disco">
+          <div class="row ultimoDisco__disco">
             <div
               class="
                 col-12 col-lg-3
@@ -561,7 +591,7 @@
               <img
                 class="img-fluid rounded"
                 src="https://picsum.photos/800/800?random=5"
-                alt=""
+                alt="Portada Visitante de Neptuno"
               />
               <h3 class="text-center">Visitante de Neptuno</h3>
               <p class="text-center">Año: 2009</p>
@@ -652,7 +682,7 @@
             justify-content-center
             align-items-center
             p-4
-            footer_flex
+            footer__flex
           "
         >
           <!-- Logo footer con animación slideInDown de animate.css y WOW.js -->
