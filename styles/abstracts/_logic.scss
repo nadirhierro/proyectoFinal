@@ -12,10 +12,15 @@
   padding-right: $padding-right;
   padding-left: $padding-left;
 }
+@mixin margin-X($margin-top, $margin-bottom) {
+  margin-top: $margin-top;
+  margin-bottom: $margin-bottom;
+}
 // mixin para filtro y transición de las fotos
 @mixin fotos {
   filter: $filtro-grey;
   transition: $transition-5;
+  box-shadow: $img-shadow;
   &:hover {
     transform: $scaleUp;
   }

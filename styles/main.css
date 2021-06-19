@@ -81,13 +81,17 @@
 }
 
 .header__nav li a {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: #96846a !important;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold !important;
 }
 
 .header__nav li ul li a {
   font-size: 1.2rem;
   color: black !important;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold !important;
 }
 
 .header__flex {
@@ -142,9 +146,14 @@
   font-weight: bold !important;
 }
 
+.proximasFechas__tarjetas__tarjeta .card {
+  overflow: hidden !important;
+}
+
 .proximasFechas__tarjetas__tarjeta img {
   filter: grayscale(80%) !important;
   transition: 0.5s !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .proximasFechas__tarjetas__tarjeta img:hover {
@@ -184,6 +193,7 @@
 .ultimoShow img {
   filter: grayscale(80%) !important;
   transition: 0.5s !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .ultimoShow img:hover {
@@ -195,9 +205,10 @@
 }
 
 .ultimoDisco img {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   filter: grayscale(80%) !important;
   transition: 0.5s !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .ultimoDisco img:hover {
@@ -207,6 +218,7 @@
 .integrantes, .biografia {
   padding-top: 0;
   padding-bottom: 20px;
+  overflow: hidden;
 }
 
 .integrantes__tarjetas {
@@ -225,9 +237,14 @@
   }
 }
 
+.integrantes__tarjetas__tarjeta .card {
+  overflow: hidden !important;
+}
+
 .integrantes__tarjetas__tarjeta img {
   filter: grayscale(80%) !important;
   transition: 0.5s !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .integrantes__tarjetas__tarjeta img:hover {
@@ -243,8 +260,9 @@
 .biografia__etapa img {
   filter: grayscale(80%) !important;
   transition: 0.5s !important;
-  padding-top: 0;
-  padding-bottom: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .biografia__etapa img:hover {
@@ -253,15 +271,15 @@
 
 @media (min-width: 576px) {
   .biografia__etapa img {
-    padding-top: 0;
-    padding-bottom: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
   }
 }
 
 @media (min-width: 992px) {
   .biografia__etapa img {
-    padding-top: 0;
-    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -271,7 +289,7 @@
 
 @media (min-width: 992px) {
   .biografia__etapa__imgCons {
-    padding-bottom: 20px !important;
+    margin-bottom: 20px !important;
   }
 }
 
@@ -291,10 +309,11 @@
 }
 
 .discografia img {
-  padding-top: 0;
-  padding-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 10px;
   filter: grayscale(80%) !important;
   transition: 0.5s !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .discografia img:hover {
@@ -357,6 +376,7 @@
   width: 100%;
   filter: grayscale(80%) !important;
   transition: 0.5s !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   z-index: 1;
 }

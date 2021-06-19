@@ -17,12 +17,16 @@
   &__nav li {
     @include links;
     & a {
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       color: $color-beige-menu;
+      font-family: $roboto;
+      font-weight: $font-bold;
     }
     & ul li a {
       font-size: 1.2rem;
       color: $color-negro;
+      font-family: $roboto;
+      font-weight: $font-bold;
     }
   }
   &__flex {

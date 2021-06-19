@@ -2,6 +2,7 @@
 .integrantes {
   // Include de padding vertical
   @include padding-X(0, $size-10 * 2);
+  overflow: hidden;
   // Gap para tarjetas y flex basis según breakpoint
   &__tarjetas {
     gap: $gap-10;
@@ -15,7 +16,9 @@
         flex-basis: 32%;
       }
     }
-
+    &__tarjeta .card {
+      overflow: hidden !important;
+    }
     &__tarjeta img {
       // include de filtro y transition
       @include fotos;
@@ -32,15 +35,15 @@
     & img {
       // Include de filtro y transition, padding para imágenes según brakpoint
       @include fotos;
-      @include padding-X(0, $size-10);
+      @include margin-X(0, $size-10);
       @media (min-width: 576px) {
         & {
-          @include padding-X(0, $size-10 * 2);
+          @include margin-X(0, $size-10 * 2);
         }
       }
       @media (min-width: 992px) {
         & {
-          @include padding-X(0, 0);
+          @include margin-X(0, 0);
         }
       }
       &:hover {
@@ -50,7 +53,7 @@
     // Padding para imagen de etapa Consagración para despegarlo del texto a partir de breakpoint
     @media (min-width: 992px) {
       &__imgCons {
-        padding-bottom: ($size-10 * 2) !important;
+        margin-bottom: ($size-10 * 2) !important;
       }
     }
     // Padding para contenido de etapas para despegar de los bordes en pantallas grandes
