@@ -183,6 +183,10 @@
   padding-bottom: 20px;
 }
 
+.noticias__noticia__titulo {
+  padding-bottom: 20px;
+}
+
 @media (min-width: 1200px) {
   .noticias__noticia__contenido {
     padding-right: 20px;

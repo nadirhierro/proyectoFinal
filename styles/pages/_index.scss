@@ -42,6 +42,9 @@
   // Extend del padding de youtube
   @extend .youtube;
   &__noticia {
+    &__titulo {
+      padding-bottom: $size-10 * 2;
+    }
     // Padding para separar el texto de los bordes en pantallas grandes
     @media (min-width: 1200px) {
       &__contenido {
