@@ -39,13 +39,13 @@
   }
   // bordes modal
   & .modal-header {
-    border-bottom: $bordeModal;
+    border-bottom: $bordeModal !important;
     & .btn-close {
-      background: transparent url(../images/cruz.png) center/1em auto no-repeat;
+      background: transparent url(../images/cruz.png) center/1em auto no-repeat !important;
     }
   }
   & .modal-footer {
-    border-top: $bordeModal;
+    border-top: $bordeModal !important;
   }
 }
 .youtube {

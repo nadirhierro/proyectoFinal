@@ -184,15 +184,15 @@
 }
 
 .proximasFechas .modal-header {
-  border-bottom: 1px solid #96846a;
+  border-bottom: 1px solid #96846a !important;
 }
 
 .proximasFechas .modal-header .btn-close {
-  background: transparent url(../images/cruz.png) center/1em auto no-repeat;
+  background: transparent url(../images/cruz.png) center/1em auto no-repeat !important;
 }
 
 .proximasFechas .modal-footer {
-  border-top: 1px solid #96846a;
+  border-top: 1px solid #96846a !important;
 }
 
 .youtube, .noticias, .ultimoShow, .ultimoDisco {
