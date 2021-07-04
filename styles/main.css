@@ -150,6 +150,11 @@
   overflow: hidden !important;
 }
 
+.proximasFechas__tarjetas__tarjeta .card .boton {
+  border: none;
+  text-align: center;
+}
+
 .proximasFechas__tarjetas__tarjeta img {
   filter: grayscale(80%) !important;
   transition: 0.5s !important;
@@ -176,6 +181,18 @@
   .proximasFechas__tarjetas__tarjeta {
     flex-basis: 24%;
   }
+}
+
+.proximasFechas .modal-header {
+  border-bottom: 1px solid #96846a;
+}
+
+.proximasFechas .modal-header .btn-close {
+  background: transparent url(../images/cruz.png) center/1em auto no-repeat;
+}
+
+.proximasFechas .modal-footer {
+  border-top: 1px solid #96846a;
 }
 
 .youtube, .noticias, .ultimoShow, .ultimoDisco {

@@ -273,9 +273,15 @@
                       >
                     </li>
                     <li>
-                      <a class="dropdown-item colorA" href="#"
-                        >Puntos de venta</a
+                      <!-- Button trigger modal -->
+                      <a
+                        class="dropdown-item colorA"
+                        href="#"
+                        data-bs-toggle="modal"
+                        data-bs-target="#puntosDeVenta"
                       >
+                        Puntos de venta
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -326,9 +332,14 @@
                       >
                     </li>
                     <li>
-                      <a class="dropdown-item colorA" href="#"
-                        >Puntos de venta</a
+                      <a
+                        class="dropdown-item colorA"
+                        href="#"
+                        data-bs-toggle="modal"
+                        data-bs-target="#puntosDeVenta"
                       >
+                        Puntos de venta
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -379,9 +390,14 @@
                       >
                     </li>
                     <li>
-                      <a class="dropdown-item colorA" href="#"
-                        >Puntos de venta</a
+                      <a
+                        class="dropdown-item colorA"
+                        href="#"
+                        data-bs-toggle="modal"
+                        data-bs-target="#puntosDeVenta"
                       >
+                        Puntos de venta
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -432,12 +448,59 @@
                       >
                     </li>
                     <li>
-                      <a class="dropdown-item colorA" href="#"
-                        >Puntos de venta</a
+                      <a
+                        class="dropdown-item colorA"
+                        href="#"
+                        data-bs-toggle="modal"
+                        data-bs-target="#puntosDeVenta"
                       >
+                        Puntos de venta
+                      </a>
                     </li>
                   </ul>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div
+          class="modal fade roboto"
+          id="puntosDeVenta"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="puntosDeVentaLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content fondoAzulNoFoto colorA">
+              <div class="modal-header">
+                <h5 class="modal-title" id="puntosDeVentaLabel">
+                  Puntos de venta
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <ul>
+                  <li>El Paraíso - Av. Colón 1326 (CABA)</li>
+                  <li>La Cripta - Av. Triunvirato 1457 (Rosario)</li>
+                  <li>El Despegue - Av. Carlos Calvo 1243 (Córdoba capital)</li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn fondoBeige negro"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
               </div>
             </div>
           </div>

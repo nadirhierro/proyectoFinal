@@ -8,6 +8,10 @@
     font-weight: $font-bold;
     &__tarjeta .card {
       overflow: hidden !important;
+      & .boton {
+        border: none;
+        text-align: center;
+      }
     }
     &__tarjeta img {
       // Include de filtro y transición para imágenes
@@ -32,6 +36,16 @@
         }
       }
     }
+  }
+  // bordes modal
+  & .modal-header {
+    border-bottom: $bordeModal;
+    & .btn-close {
+      background: transparent url(../images/cruz.png) center/1em auto no-repeat;
+    }
+  }
+  & .modal-footer {
+    border-top: $bordeModal;
   }
 }
 .youtube {
