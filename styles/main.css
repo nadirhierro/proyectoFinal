@@ -16,7 +16,7 @@
 }
 
 .fondoAzul {
-  background-image: url(../images/fondo.jpeg);
+  background-image: url(./images/fondo.jpeg);
   background-color: #122335 !important;
   background-blend-mode: darken;
   background-size: cover;
@@ -34,11 +34,7 @@
 }
 
 .fondoBeigeRadial {
-  background: radial-gradient(
-    circle,
-    rgba(150, 132, 106, 0.83237) 46%,
-    rgba(111, 96, 96, 0.837973) 100%
-  );
+  background: radial-gradient(circle, rgba(150, 132, 106, 0.83237) 46%, rgba(111, 96, 96, 0.837973) 100%);
 }
 
 .subtitulo {
@@ -68,7 +64,7 @@
 }
 
 .header .navbar-toggler-icon {
-  background-image: url(/images/hamburguer.png) !important;
+  background-image: url(./images/hamburguer.png) !important;
 }
 
 .header__nav__logo {
@@ -182,10 +178,7 @@
   }
 }
 
-.youtube,
-.noticias,
-.ultimoShow,
-.ultimoDisco {
+.youtube, .noticias, .ultimoShow, .ultimoDisco {
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -226,8 +219,7 @@
   transform: scale(1.05, 1.05) !important;
 }
 
-.integrantes,
-.biografia {
+.integrantes, .biografia {
   padding-top: 0;
   padding-bottom: 20px;
   overflow: hidden;
@@ -345,15 +337,7 @@
 .imagenes__grid {
   padding-bottom: 20px;
   display: grid;
-  grid-template-areas:
-    "img1"
-    "img2"
-    "img3"
-    "img4"
-    "img5"
-    "img6"
-    "img7"
-    "img8";
+  grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6" "img7" "img8";
   grid-template-rows: repeat 8, 1fr;
   overflow: hidden;
   gap: 15px;
@@ -412,12 +396,7 @@
 
 @media (min-width: 768px) {
   .imagenes__grid {
-    grid-template-areas:
-      "img1 img2 img2 img3"
-      "img5 img2 img2 img4"
-      "img5 img6 img6 img6"
-      "img7 img7 img7 img7"
-      "img8 img8 img8 img8";
+    grid-template-areas: "img1 img2 img2 img3" "img5 img2 img2 img4" "img5 img6 img6 img6" "img7 img7 img7 img7" "img8 img8 img8 img8";
     grid-template-rows: repeat 5, 1fr;
     grid-template-columns: repeat 4, 1fr;
     gap: 10px;
@@ -426,11 +405,7 @@
 
 @media (min-width: 992px) {
   .imagenes__grid {
-    grid-template-areas:
-      "img1 img2 img2 img3 img4"
-      "img5 img2 img2 img6 img6"
-      "img5 img7 img7 img7 img7"
-      "img8 img8 img8 img8 img8";
+    grid-template-areas: "img1 img2 img2 img3 img4" "img5 img2 img2 img6 img6" "img5 img7 img7 img7 img7" "img8 img8 img8 img8 img8";
     grid-template-rows: repeat 4, 1fr;
     grid-template-columns: repeat 5, 1fr;
   }
