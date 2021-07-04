@@ -16,7 +16,7 @@
 }
 
 .fondoAzul {
-  background-image: url(./images/fondo.jpeg);
+  background-image: url(../../images/fondo.jpeg);
   background-color: #122335 !important;
   background-blend-mode: darken;
   background-size: cover;
@@ -64,7 +64,7 @@
 }
 
 .header .navbar-toggler-icon {
-  background-image: url(./images/hamburguer.png) !important;
+  background-image: url(../../images/hamburguer.png) !important;
 }
 
 .header__nav__logo {
