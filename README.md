@@ -8,7 +8,7 @@ _Tutor: Emmanuel Cáceres_
 
 ## Sobre el trabajo
 
-_Se trata de una página web para una banda ficticia de música, apliqué varias herramientas del curso:_
+_Se trata de una página web para una banda de música que tuve cuando era más chico, apliqué varias herramientas del curso:_
 
 * [Bootstrap](https://getbootstrap.com/)
 
@@ -20,4 +20,5 @@ _Se trata de una página web para una banda ficticia de música, apliqué varias
 
 * Flexbox, grids, transformaciones, entre otras cosas.
 
-Las imágenes las encontré buscando por google, no tienen finalidad comercial.
+Las imágenes no son de la banda, las encontré buscando por google, no tienen finalidad comercial.
+Los videos sí son de la banda, cuando teníamos 18 años.
