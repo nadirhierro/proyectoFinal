@@ -212,83 +212,87 @@
         <div class="container formulario">
           <!-- Formulario -->
           <form action="">
-            <div class="form-group">
-              <h2 class="subtitulo negro roboto">Contactanos</h2>
-              <!-- Row para los componentes del formulario -->
-              <div class="row">
-                <!-- Distribución responsive de los componentes -->
-                <div class="col-12 p-1">
-                  <label for="Nombre">Nombre:</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="Nombre"
-                    placeholder="Nombre"
-                    aria-label="Nombre"
-                    required
-                  />
-                </div>
-                <div class="col-12 p-1">
-                  <label for="email">Email:</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="Email"
-                    placeholder="Email"
-                    aria-label="Email"
-                  />
-                </div>
-                <!-- select -->
-                <div class="col-12 p-1">
-                  <label for="Select" class="form-label">Edad</label>
-                  <select id="Select" class="form-select">
-                    <option>Entre 18 y 30 años</option>
-                    <option>Entre 30 y 40 años</option>
-                    <option>Mayor a 40 años</option>
-                  </select>
-                </div>
-                <!-- flex para centrar checkbox -->
-                <div
-                  class="
-                    col-12
-                    p-1
-                    d-flex
-                    justify-content-center
-                    align-items-center
-                  "
-                >
-                  <div class="form-check">
+              <div class="form-group">
+                <h2 class="subtitulo negro roboto">Contactanos</h2>
+                <!-- Row para los componentes del formulario -->
+                <div class="row">
+                  <!-- Distribución responsive de los componentes -->
+                  <div class="col-12 p-1">
+                    <label for="Nombre">Nombre:</label>
                     <input
-                      type="checkbox"
-                      class="form-check-input"
-                      id="Newsletter"
+                      type="text"
+                      name="nombre"
+                      class="form-control"
+                      id="Nombre"
+                      placeholder="Nombre"
+                      aria-label="Nombre"
+                      required
                     />
-                    <label class="form-check-label" for="Newsletter"
-                      >¿Desea recibir el Newsletter?</label
+                  </div>
+                  <div class="col-12 p-1">
+                    <label for="email">Email:</label>
+                    <input
+                      type="email"
+                      name="email"
+                      class="form-control"
+                      id="Email"
+                      placeholder="Email"
+                      aria-label="Email"
+                    />
+                  </div>
+                  <!-- select -->
+                  <div class="col-12 p-1">
+                    <label for="Select" class="form-label">Edad</label>
+                    <select name="edad" id="Select" class="form-select">
+                      <option>Entre 18 y 30 años</option>
+                      <option>Entre 30 y 40 años</option>
+                      <option>Mayor a 40 años</option>
+                    </select>
+                  </div>
+                  <!-- flex para centrar checkbox -->
+                  <div
+                    class="
+                      col-12
+                      p-1
+                      d-flex
+                      justify-content-center
+                      align-items-center
+                    "
+                  >
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        name="acepta"
+                        class="form-check-input"
+                        id="Newsletter"
+                      />
+                      <label class="form-check-label" for="Newsletter"
+                        >¿Desea recibir el Newsletter?</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-12 p-1">
+                    <label for="Comentarios" class="form-label"
+                      >Comentarios</label
                     >
+                    <textarea
+                      name="comentarios"
+                      class="form-control"
+                      id="Comentarios"
+                      rows="3"
+                    ></textarea>
                   </div>
                 </div>
-                <div class="col-12 p-1">
-                  <label for="Comentarios" class="form-label"
-                    >Comentarios</label
+                <!-- Flex para centrar el submit -->
+                <div class="col-12 p-1 d-flex justify-content-center">
+                  <input
+                    type="submit"
+                    class="btn btn-dark fondoAzulNoFoto colorA"
+                    value="Enviar"
                   >
-                  <textarea
-                    class="form-control"
-                    id="Comentarios"
-                    rows="3"
-                  ></textarea>
+                  </input>
                 </div>
               </div>
-              <!-- Flex para centrar el submit -->
-              <div class="col-12 p-1 d-flex justify-content-center">
-                <button
-                  type="submit"
-                  class="btn btn-dark fondoAzulNoFoto colorA"
-                >
-                  Enviar
-                </button>
-              </div>
-            </div>
           </form>
         </div>
       </div>
