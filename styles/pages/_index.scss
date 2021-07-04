@@ -38,13 +38,13 @@
     }
   }
   // bordes modal
-  & .noBottom {
+  .noBottom {
     border-bottom: $bordeModal !important;
     .close {
       background: transparent url(../images/cruz.png) center/1em auto no-repeat !important;
     }
   }
-  & .noTop {
+  .noTop {
     border-top: $bordeModal !important;
   }
 }
