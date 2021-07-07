@@ -16,6 +16,7 @@
     &__tarjeta img {
       // Include de filtro y transición para imágenes
       @include fotos;
+      max-width: 100%;
     }
     // gap y flex basis según breakpoint para las tarjetas
     @media (min-width: 576px) {
@@ -72,6 +73,7 @@
 
   & img {
     @include fotos;
+    max-width: 100%;
   }
 }
 .ultimoDisco {

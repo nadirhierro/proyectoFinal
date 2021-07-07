@@ -45,6 +45,7 @@
       // Include de tamaños, filtro y transición, sombra y z-index para imágenes
       @include sizes(100%, 100%);
       @include fotos;
+      max-width: 100%;
       box-shadow: $img-shadow;
       z-index: 1;
       &:hover {
