@@ -156,10 +156,10 @@
 }
 
 .proximasFechas__tarjetas__tarjeta img {
+  max-width: 100%;
   filter: grayscale(80%) !important;
   transition: 0.5s !important;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  max-width: 100%;
 }
 
 .proximasFechas__tarjetas__tarjeta img:hover {
@@ -213,10 +213,10 @@
 }
 
 .ultimoShow img {
+  max-width: 100%;
   filter: grayscale(80%) !important;
   transition: 0.5s !important;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  max-width: 100%;
 }
 
 .ultimoShow img:hover {
@@ -229,6 +229,7 @@
 
 .ultimoDisco img {
   margin-bottom: 10px;
+  max-width: 100%;
   filter: grayscale(80%) !important;
   transition: 0.5s !important;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -265,10 +266,10 @@
 }
 
 .integrantes__tarjetas__tarjeta img {
+  max-width: 100%;
   filter: grayscale(80%) !important;
   transition: 0.5s !important;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  max-width: 100%;
 }
 
 .integrantes__tarjetas__tarjeta img:hover {
@@ -282,6 +283,7 @@
 }
 
 .biografia__etapa img {
+  max-width: 100%;
   filter: grayscale(80%) !important;
   transition: 0.5s !important;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -335,10 +337,10 @@
 .discografia img {
   margin-top: 0;
   margin-bottom: 10px;
+  max-width: 100%;
   filter: grayscale(80%) !important;
   transition: 0.5s !important;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  max-width: 100%;
 }
 
 .discografia img:hover {
@@ -399,10 +401,10 @@
 .imagenes__grid img {
   height: 100%;
   width: 100%;
+  max-width: 100%;
   filter: grayscale(80%) !important;
   transition: 0.5s !important;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  max-width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   z-index: 1;
 }

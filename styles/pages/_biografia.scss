@@ -22,7 +22,6 @@
     &__tarjeta img {
       // include de filtro y transition
       @include fotos;
-      max-width: 100%;
     }
   }
 }

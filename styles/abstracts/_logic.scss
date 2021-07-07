@@ -18,6 +18,7 @@
 }
 // mixin para filtro y transición de las fotos
 @mixin fotos {
+  max-width: 100%;
   filter: $filtro-grey;
   transition: $transition-5;
   box-shadow: $img-shadow;

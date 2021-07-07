@@ -2,7 +2,6 @@
 .discografia img {
   @include margin-X(0, $size-10);
   @include fotos;
-  max-width: 100%;
 }
 // Padding para cada disco y negrita
 .disco {
